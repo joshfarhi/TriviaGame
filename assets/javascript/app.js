@@ -9,3 +9,14 @@ var interval = setInterval(function() {
        clearInterval(interval);
     }
 }, 1000);
+
+// create array with questions
+    // questions: 0, 1, 2, 3
+    // answers: 0, 1, 2, 3
+    // correct  1, 2, 1, 3
+
+    //grab right/wrong/incorrect answers
+    
+        // display correct answers 
+        // display wrong answers
+        // display unanswered 
