@@ -1,38 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TriviaGame</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Bootstrap File -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TriviaGameQuestions</title>
+     <!-- Bootstrap File -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
 
-    <!--Start page-->
-    <div class="container">
-        <div class = "startPage">
+        <div class="container">
+                <center>
         <h1 id="title">Totally Trivial Trivia</h1>
-        <h2 id="author">By: Josh Farhi</h2>
-        <center>
-        <a class="btn btn-primary btn-lg startBtn" href="triviagamequestions.html" role="button" onclick="myFunction()">Start</a>
-        </center>
-            </div>
-        </div>
+        <h1 id="countdown"></h1>
 
-
-    <!--Question page
-     <div class="containerQuestion"></div>
-
-        <h1 id="title">Totally Trivial Trivia</h1>
-
-       
-        Question
+       <div id = "questionsArray"
+        <!--Question 1-->
         <h3 id = "questionOne"><center>What is the capitol of North Carolina?</center></h3>
             <div class = "row">
         <label class="col btn btn-secondary">
@@ -46,10 +31,9 @@
           </label>
           <label class="col btn btn-secondary">
             <input type="radio" name="options" id="option4" autocomplete="off"> Wilmington
-        </div>
         </label>
-
-        Question 2
+            </div>
+        <!--Question 2-->
         <h3 id = "questionTwo"><center>What is the capitol of the United States?</center></h3>
         <div class = "row">
         <label class="col btn btn-secondary">
@@ -63,10 +47,10 @@
           </label>
           <label class="col btn btn-secondary">
             <input type="radio" name="options" id="option4" autocomplete="off"> Florida
-            </div>
+        </div>
         </label>
 
-        Question 3
+        <!--Question 3-->
         <h3 id = "questionThree"><center>Where in NC were scenes of Talledega Night's filmed?</center></h3>
         <div class = "row">
         <label class="col btn btn-secondary">
@@ -82,7 +66,7 @@
             <input type="radio" name="options" id="option4" autocomplete="off"> Wilmington
           </label>
             </div>
-        Question 4
+        <!--Question 4-->
         <h3 id = "questionFour"><center>Who is the richest man in the world?</center></h3>
         <div class = "row">
         <label class="col btn btn-secondary">
@@ -99,12 +83,24 @@
           </label>
         </div>
     </div>
+</div>
+</div>
 
+<div id="timer"></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="assets/javascript/app.js"></script>
-</body> -->
-
+<div class="hidden" id="score">
+        <h3></h3>
+        <p id="correctAnswers"></p>
+        <p id="incorrectAnswers"></p>
+        <p id="unanswered"></p>
+      </div>
+    </div>
+  </div>
+</div>
+        <!--javascript / jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <script src="assets/javascript/app.js"></script>
+</body>
 </html>

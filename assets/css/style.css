@@ -1,15 +1,26 @@
 body {
     background-color: black;
 }
-
+.hidden {
+    display: none;
+}
 .container {
     background-color: whitesmoke;
     width: 300px;
     height: 500px;
     float: center;
     margin-top: 100px;
-
   }
+
+
+  .row {
+    background-color: whitesmoke;
+    width: 300px;
+    height: 500px;
+    float: center;
+    margin-top: 100px;
+  }
+
 #title {
     padding-top: 150px;
     text-align: center;
@@ -30,4 +41,28 @@ body {
   .btn btn-primary btn-lg:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
-
+#results {
+    text-align: center;
+    color: #585858;
+    font-size: 18px;
+}
+#questionOne {
+    text-align: center;
+    color: #585858;
+    font-size: 18px;
+}
+#questionTwo {
+    text-align: center;
+    color: #585858;
+    font-size: 18px;
+}
+#questionThree {
+    text-align: center;
+    color: #585858;
+    font-size: 18px;
+}
+#questionFour {
+    text-align: center;
+    color: #585858;
+    font-size: 18px;
+}

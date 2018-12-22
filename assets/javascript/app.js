@@ -1,24 +1,11 @@
-$(document).ready(function () {
+var seconds_left = 10;
+var interval = setInterval(function() {
+    document.getElementById('countdown').innerHTML = "Time Left: " +  --seconds_left;
 
-
-
-
-
-
-
-// click start button to view questions 
-
-// $(startButton.on("click", function() {
-//    showQuestions.show(".questionContainer");
-//    questionStart.hide(".container");
-//    run();
-
-
-
-
-
-
-
-
-
-});
+    if (seconds_left <= 0)
+    {
+        var finalScore = $(".score")
+       document.getElementById('questionsArray').innerHTML = finalScore;
+       clearInterval(interval);
+    }
+}, 1000);
